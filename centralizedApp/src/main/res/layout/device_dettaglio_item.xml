@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="POD 1"
+                    android:textSize="15dp"
+                    android:textIsSelectable="false"
+                    android:password="false"
+                    android:textColor="#4d4d4d"
+                    android:layout_marginLeft="40dp"
+                    android:minWidth="143dp"
+                    android:id="@+id/deviceName"
+                    android:layout_weight="6.8"
+                    android:paddingTop="10dp"
+                    android:gravity="center_horizontal|top" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3.8"
+                    >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="25dp"
+                        android:textIsSelectable="false"
+                        android:textColor="#4d4d4d"
+                        android:textSize="14dp"
+                        android:visibility="visible"
+                        android:id="@+id/deviceDesc"
+                        android:layout_gravity="center"
+                        android:layout_weight="5"
+                        android:gravity="center_horizontal|bottom"
+                        android:text="stampante" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/deviceCost"
+                        android:textColor="#4d4d4d"
+                        android:textSize="14dp"
+                        android:layout_weight="5"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal|bottom" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/linearLayout41"
+            android:visibility="visible" >
+
+        </LinearLayout>
+    </LinearLayout>

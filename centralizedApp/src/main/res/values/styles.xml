@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Animations"/>
+
+    <!-- PopDownMenu -->
+    <style name="Animations.PopDownMenu"/>
+
+    <style name="Animations.PopDownMenu.Center">
+        <item name="android:windowEnterAnimation">@anim/grow_from_top</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottom</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Left">
+        <item name="android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Right">
+        <item name="android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Reflect">
+        <item name="android:windowEnterAnimation">@anim/pump_top</item>
+        <item name="android:windowExitAnimation">@anim/disappear</item>
+    </style>
+
+    <!-- PopUpMenu -->
+    <style name="Animations.PopUpMenu"/>
+
+    <style name="Animations.PopUpMenu.Center">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Left">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Right">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Reflect">
+        <item name="android:windowEnterAnimation">@anim/pump_bottom</item>
+        <item name="android:windowExitAnimation">@anim/disappear</item>
+    </style>
+
+    <style name="WindowTitleBackground">
+        <item name="android:background">@color/titlebackgroundcolor</item>
+    </style>
+
+    <style name="mySpinnerStyle" parent="@android:style/Widget.Spinner">
+        <!--<item name="android:textAppearance">@android:style/TextAppearance.DeviceDefault</item>-->
+    </style>
+
+    -- Buttons --
+    <style name="optimaButtonStyle" >
+        <item name="android:layout_width">@dimen/optima_button_width</item>
+        <item name="android:layout_height">@dimen/optima_button_height</item>
+        <item name="android:background">@drawable/full_holo_light</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/regular_text_size</item>
+    </style>
+
+    -- RadioButtons --
+
+    <style name="optimaRadioButtonStyle" >
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/regular_text_size</item>
+        <item name="android:textColor">@color/optima_lable_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/main_page_lable_margin</item>
+        <item name="android:layout_marginRight">@dimen/main_page_lable_margin</item>
+    </style>
+
+
+    <style name="optimaRadioButtonLargeStyle" parent="optimaRadioButtonStyle" >
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/main_radio_button_text_size</item>
+    </style>
+
+    <style name="FilePickerTheme" parent="NNF_BaseTheme.Light">
+        <item name="colorPrimary">@color/filepicker_primary</item>
+        <item name="colorPrimaryDark">@color/filepicker_primary_dark</item>
+        <item name="colorAccent">@color/filepicker_accent</item>
+        <item name="alertDialogTheme">@style/FilePickerAlertDialogTheme</item>
+    </style>
+
+    <style name="FilePickerAlertDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorPrimary">@color/filepicker_primary</item>
+        <item name="colorPrimaryDark">@color/filepicker_primary_dark</item>
+        <item name="colorAccent">@color/filepicker_accent</item>
+    </style>
+
+    <style name="AppDialogStyle" parent="Base.Theme.AppCompat.Dialog">
+        <item name="android:colorForeground">@android:color/transparent</item>
+        <item name="android:colorForegroundInverse">@android:color/transparent</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@android:color/transparent</item>
+        <item name="android:disabledAlpha">0.5</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="OptimaProgressDialog" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/horizontal_progress_drawable</item>
+    </style>
+    <!--<item name="android:intermediateOnly">false</item>-->
+    <!--<item name="android:intermediateOnly">false</item>-->
+
+    <style name="DeviceDetailDialog" parent="Base.Theme.AppCompat.Dialog">
+        <item name="android:colorForeground">@android:color/transparent</item>
+        <item name="android:colorForegroundInverse">@android:color/transparent</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@android:color/transparent</item>
+        <item name="android:disabledAlpha">0.5</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="PopupAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+</resources>

@@ -1,0 +1,278 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout16"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_solid_background"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:paddingTop="30dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/main_solid_background"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.3"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/logo_large"
+                android:contentDescription="@string/page_lable" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="5dp"
+            android:layout_height="fill_parent"
+            android:background="#e6e6e6"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#cf031e"
+                android:onClick="closeAll"
+                android:shadowColor="@android:color/darker_gray"
+                android:text="@string/esci"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/linearLayout41"
+        android:layout_below="@+id/linearLayout"
+        android:fillViewport="false"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center|bottom"
+                android:background="@drawable/bottom_line"
+                android:gravity="center_vertical"
+                android:paddingLeft="40dp"
+                android:text="@string/auto_testing"
+                android:textColor="@android:color/white"
+                android:textIsSelectable="true"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tipologiaContrattoLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="10"
+                android:text="@string/configurator_type"
+                android:textColor="#4d4d4d"
+                android:textIsSelectable="true"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/configuratorTypeRadioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2.6"
+                android:clickable="true"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/business"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:text="@string/business"
+                    android:textColor="#4d4d4d"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/consumer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:enabled="true"
+                    android:text="@string/consumer"
+                    android:textColor="#4d4d4d"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="@string/path_to_the_test_file"
+                android:textColor="#4d4d4d"
+                android:textIsSelectable="true"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:id="@+id/filePath"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:background="@android:color/background_light"
+                android:clickable="true"
+                android:enabled="true"
+                android:focusable="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:minWidth="120dp"
+                android:textColor="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/browse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|right"
+                    android:background="@drawable/red_optima_button_selector"
+                    android:enabled="true"
+                    android:text="@string/browse"
+                    android:textSize="13sp"
+                    android:textColor="@color/red"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/runTest"
+            style="@style/optimaButtonStyle"
+            android:text="@string/run_test"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:background="@drawable/red_optima_button_selector" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:visibility="visible"
+            android:layout_margin="20dp"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout42"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="false"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bottom_line"
+            android:contentDescription="@string/footer" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout42"
+        android:layout_gravity="center_horizontal|bottom"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/back_button"
+            android:clickable="true"
+            android:visibility="visible"
+            android:contentDescription="@string/back_button_enabled"
+            android:onClick="backAction" />
+
+        <ImageButton
+            android:id="@+id/backButtondDisabled"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/back_button_disabled"
+            android:clickable="true"
+            android:visibility="gone"
+            android:contentDescription="@string/back_button_disabled" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:minHeight="40dp"
+                android:background="@drawable/blue_gradient_background">
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/send_contract_message"
+                    android:id="@+id/textView"
+                    android:textColor="@android:color/background_light"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:minHeight="40dp"
+                android:background="#838383">
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/send_yes"
+                    android:id="@+id/invia_contratto_btn"
+                    android:background="@drawable/full_holo_light"
+                    android:textColor="#d20e1c"
+                    android:minHeight="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:minWidth="170dp"/>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/send_no"
+                    android:id="@+id/annulla_btn"
+                    android:background="@drawable/full_holo_light"
+                    android:textColor="#313131"
+                    android:minHeight="60dp"
+                    android:minWidth="170dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

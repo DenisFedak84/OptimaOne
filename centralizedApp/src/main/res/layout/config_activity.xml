@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#cccccc">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_email"
+                android:textColor="@android:color/background_dark"/>
+
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:minWidth="300dp"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/full_holo_light"
+                android:maxHeight="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp">
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/salva"
+                android:id="@+id/ok_btn"
+                android:background="@drawable/full_holo_light"
+                android:minHeight="60dp"
+                android:minWidth="140dp"
+                android:textColor="#d20e1c"
+                android:textStyle="bold"/>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/annulla"
+                android:id="@+id/cancel_btn"
+                android:background="@drawable/full_holo_light"
+                android:minHeight="60dp"
+                android:minWidth="140dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/testNum"
+            android:background="@drawable/blue_dettaglio_table_cell"
+            android:textColor="@color/white"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="@dimen/recycler_view_result_cell"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="success"
+            android:id="@+id/energy"
+            android:contentDescription="@string/energy_cell"
+            android:background="@drawable/white_dettaglio_table_cell"
+            android:textColor="@color/black"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="@dimen/recycler_view_result_cell"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="success"
+            android:id="@+id/gas"
+            android:contentDescription="@string/gas_cell"
+            android:background="@drawable/white_dettaglio_table_cell"
+            android:textColor="@color/black"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="@dimen/recycler_view_result_cell"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="success"
+            android:background="@drawable/white_dettaglio_table_cell"
+            android:textColor="@color/black"
+            android:contentDescription="@string/adsl_cell"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:id="@+id/adsl"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="@dimen/recycler_view_result_cell"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="failed"
+            android:contentDescription="@string/voce_cell"
+            android:background="@drawable/white_dettaglio_table_cell"
+            android:textColor="@color/black"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:id="@+id/voce"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="@dimen/recycler_view_result_cell"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="-------"
+            android:contentDescription="@string/device_cell"
+            android:background="@drawable/white_dettaglio_table_cell"
+            android:textColor="@color/black"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:id="@+id/device"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="@dimen/recycler_view_result_cell"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="success"
+            android:contentDescription="@string/total_cell"
+            android:background="@drawable/white_dettaglio_table_cell"
+            android:textColor="@color/black"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:visibility="visible"
+            android:id="@+id/total"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="@dimen/recycler_view_result_cell"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="0"
+            android:background="@drawable/white_dettaglio_table_cell"
+            android:textColor="@color/black"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:visibility="gone"
+            android:id="@+id/resultItemIndex"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

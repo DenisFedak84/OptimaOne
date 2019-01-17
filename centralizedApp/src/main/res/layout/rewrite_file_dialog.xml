@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_gradient_background">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/sfd_confirmation_message"
+                android:layout_marginLeft="110dp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#838383">
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/si"
+                android:id="@+id/rewrite_yes"
+                android:minWidth="170dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#d20e1c"
+                android:background="@drawable/full_holo_light"
+                android:minHeight="60dp"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sfd_btn_no"
+                android:id="@+id/rewrite_no"
+                android:minWidth="170dp"
+                android:textColor="#313131"
+                android:background="@drawable/full_holo_light"
+                android:minHeight="60dp"/>
+    </LinearLayout>
+</LinearLayout>

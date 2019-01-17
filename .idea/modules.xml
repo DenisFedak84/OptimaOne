@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/OptimaOne.iml" filepath="$PROJECT_DIR$/OptimaOne.iml" />
+      <module fileurl="file://$PROJECT_DIR$/centralizedApp/centralizedApp.iml" filepath="$PROJECT_DIR$/centralizedApp/centralizedApp.iml" />
+    </modules>
+  </component>
+</project>

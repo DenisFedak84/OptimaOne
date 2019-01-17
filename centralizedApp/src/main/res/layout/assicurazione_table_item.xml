@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout43"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/item_background_lite"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/polizzaAssicurativa"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/full_holo_light"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:textColor="#4d4d4d"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/dataScadenzaAttuale"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/full_holo_light"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#4d4d4d"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/premioAnnuoAssicurativa"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/full_holo_light"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#4d4d4d"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/assicurativaId"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5"
+        android:background="@drawable/full_holo_light"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#4d4d4d"
+        android:textSize="13dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout35"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1.3"
+        android:background="#e6e6e6"
+        android:clickable="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:longClickable="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/deleteButtonLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="22"
+                android:background="@drawable/eliminia_button" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

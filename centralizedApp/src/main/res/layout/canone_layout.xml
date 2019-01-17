@@ -1,0 +1,697 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_solid_background"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:paddingTop="30dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/main_solid_background"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.3"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/logo_large" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="5dp"
+            android:layout_height="fill_parent"
+            android:background="#e6e6e6"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#cf031e"
+                android:onClick="closeAll"
+                android:shadowColor="@android:color/darker_gray"
+                android:text="@string/esci"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/eighteen_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right|center_vertical"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/canone_data"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/offertaUnicaLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="70dp"
+                        android:background="@drawable/blue_gradient_background"
+                        android:baselineAligned="false"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/canoneTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="25dp"
+                            android:text="@string/per_le_tue_abitudini_di_consumo_lofferta_elaborata_di"
+                            android:textColor="@android:color/white"
+                            android:textIsSelectable="false"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/blue_gradient_background"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="9"
+                            android:orientation="vertical"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginTop="15dp"
+                                android:text="@string/canone_mensile_nn"
+                                android:textColor="@android:color/white"
+                                android:textSize="13dp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="3dp"
+                                    android:text="@string/euro"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="60dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/canoneMensile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="-10dp"
+                                    android:text="@string/xx"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="90dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="30dp"
+                                android:text="@string/iva_esclusa"
+                                android:textColor="@android:color/white"
+                                android:textSize="13dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="9"
+                            android:gravity="bottom"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/canoneArrowBackButton"
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:layout_gravity="bottom"
+                                android:background="@drawable/arrow_button_back_small"
+                                android:visibility="gone" />
+
+                            <ImageButton
+                                android:id="@+id/canoneArrowButton"
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:layout_gravity="bottom"
+                                android:background="@drawable/arrow_button_small" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/canoneMensileIvaLayoutBusiness"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/background_light"
+                        android:baselineAligned="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center|center_vertical|center_horizontal"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout34"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="9"
+                                android:orientation="vertical" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.5"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/canone_mensile_nn"
+                                    android:textColor="#4d4d4d"
+                                    android:textSize="13dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="3dp"
+                                        android:text="@string/euro"
+                                        android:textColor="#4d4d4d"
+                                        android:textSize="60dp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/canoneMensileIva"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="-10dp"
+                                        android:text="@string/xx"
+                                        android:textColor="#4d4d4d"
+                                        android:textSize="90dp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/textView27"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="30dp"
+                                    android:text="@string/iva_inclusa"
+                                    android:textColor="#4d4d4d"
+                                    android:textSize="13dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="9"
+                                android:gravity="bottom"
+                                android:orientation="vertical" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/background_light"
+                        android:baselineAligned="false"
+                        android:gravity="center|center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="9"
+                            android:orientation="vertical"></LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/costoAttivazioneLayout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.5"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:orientation="horizontal"
+                            android:visibility="invisible">
+
+                            <TextView
+                                android:id="@+id/activationCostLable"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:text="@string/activation_cost_lable_business"
+                                android:textColor="#4d4d4d"
+                                android:textSize="17dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="1dp"
+                                android:text="@string/euro"
+                                android:textColor="#4d4d4d"
+                                android:textIsSelectable="false"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/unaTantum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/xx"
+                                android:textColor="#4d4d4d"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="9"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/attivazioneArrowBackButton"
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:layout_gravity="left"
+                                android:background="@drawable/arrow_button_back_small"
+                                android:visibility="gone" />
+
+                            <ImageButton
+                                android:id="@+id/attivazioneArrowButton"
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:layout_gravity="left"
+                                android:background="@drawable/arrow_button_small" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/blue_gradient_background"
+                        android:baselineAligned="false"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="9"
+                            android:orientation="vertical" />
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.5"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/bonus_conto_relax"
+                                android:textColor="@android:color/white"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="45dp"
+                                android:text="@string/euro_t"
+                                android:textColor="@android:color/white"
+                                android:textIsSelectable="false"
+                                android:textSize="19dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/relaxCost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="@android:color/white"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="9"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/contoRelaxArrowBackButton"
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:layout_gravity="left"
+                                android:background="@drawable/arrow_button_back_small"
+                                android:visibility="gone" />
+
+                            <ImageButton
+                                android:id="@+id/contoRelaxArrowButton"
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/arrow_button_small" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/canoneMensileIvaLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/background_light"
+                        android:baselineAligned="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center|center_vertical|center_horizontal"
+                        android:orientation="horizontal"
+                        android:visibility="invisible">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:text="@string/esempio_di_canone_mensile_iva_inclusa"
+                            android:textColor="#4d4d4d"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="1dp"
+                            android:text="@string/euro_t"
+                            android:textColor="#4d4d4d"
+                            android:textIsSelectable="false"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/canoneMensileIvaConsumer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/xx"
+                            android:textColor="#4d4d4d"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/mobileCostLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/blue_gradient_background"
+                        android:baselineAligned="false"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="9"
+                            android:orientation="vertical" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.5"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/costo_annuo_mobile"
+                                android:textColor="@android:color/white"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="@string/euro_t"
+                                android:textColor="@android:color/white"
+                                android:textIsSelectable="false"
+                                android:textSize="19dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/mobileCost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="@android:color/white"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="9"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/mobileArrowBackButton"
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:layout_gravity="left"
+                                android:background="@drawable/arrow_button_back_small"
+                                android:visibility="gone" />
+
+                            <ImageButton
+                                android:id="@+id/mobileArrowButton"
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/arrow_button_small" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/navigationPanel"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/backButton"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/back_button"
+                    android:clickable="true"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/dettaglio"
+                    android:layout_width="150dp"
+                    android:layout_height="75dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/full_holo_light"
+                    android:clickable="true"
+                    android:shadowColor="@android:color/darker_gray"
+                    android:text="@string/dettaglio"
+                    android:textColor="@color/holo_red_dark"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/archivia"
+                    android:layout_width="150dp"
+                    android:layout_height="75dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/full_holo_light"
+                    android:clickable="true"
+                    android:shadowColor="@android:color/darker_gray"
+                    android:text="@string/archivia"
+                    android:textColor="@color/holo_red_dark"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/modifica"
+                    android:layout_width="150dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/full_holo_light"
+                    android:clickable="true"
+                    android:shadowColor="@android:color/darker_gray"
+                    android:text="@string/modifica"
+                    android:textColor="@color/holo_red_dark"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout37"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/tornaItus"
+                    android:layout_width="220dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/full_holo_light"
+                    android:clickable="true"
+                    android:shadowColor="@android:color/darker_gray"
+                    android:text="@string/torna_itus"
+                    android:textColor="@color/holo_red_dark"
+                    android:textSize="23dp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/calcolaLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/calcola"
+                    android:layout_width="150dp"
+                    android:layout_height="75dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/full_holo_light"
+                    android:clickable="true"
+                    android:shadowColor="@android:color/darker_gray"
+                    android:text="@string/calcola"
+                    android:textColor="@color/holo_red_dark"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

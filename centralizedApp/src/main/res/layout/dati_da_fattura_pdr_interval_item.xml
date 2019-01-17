@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/linearLayout"
+                  android:layout_marginTop="5dp">
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/intervallo_di_tempo_da"
+                      android:id="@+id/textView1"
+                      android:textColor="#4d4d4d"
+                      android:textSize="14dp"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/periodoDa"
+                      android:layout_marginLeft="8dp"
+                      android:textColor="#4d4d4d"
+                      android:textSize="14dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:id="@+id/linearLayout5">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/a"
+                      android:id="@+id/textView8"
+                      android:textColor="#4d4d4d"
+                      android:layout_marginLeft="15dp"
+                      android:textSize="14dp"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/periodoA"
+                      android:layout_marginLeft="8dp"
+                      android:textColor="#4d4d4d"
+                      android:textSize="14dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:id="@+id/linearLayout3">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/smc"
+                      android:id="@+id/textView"
+                      android:textColor="#4d4d4d"
+                      android:layout_marginLeft="15dp"
+                      android:textSize="14dp"
+                      android:visibility="invisible"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/intervaliKwh1"
+                      android:layout_marginLeft="8dp"
+                      android:textColor="#4d4d4d"
+                      android:textSize="14dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

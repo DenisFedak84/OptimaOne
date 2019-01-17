@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="#e6e6e6">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/datastart"
+                android:background="@drawable/full_holo_light"
+                android:minWidth="100dp"
+                android:enabled="false"
+                android:maxWidth="100dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="11dp"
+            android:layout_marginLeft="-3dp" />
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_edittext"
+                android:id="@+id/datainvisible"
+                android:visibility="gone"/>
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/datafinish"
+                android:background="@drawable/full_holo_light"
+                android:minWidth="100dp"
+                android:enabled="false"
+                android:maxWidth="100dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="11dp"
+            android:layout_marginLeft="-8dp" />
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/valueKwh1"
+                android:background="@drawable/full_holo_light"
+                android:minWidth="50dp"
+                android:enabled="false"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="11dp"
+            android:layout_marginLeft="-8dp" />
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/valueKwh2"
+                android:background="@drawable/full_holo_light"
+                android:minWidth="50dp"
+                android:enabled="false"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="11dp"
+            android:layout_marginLeft="-8dp" />
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/valueKwh3"
+                android:background="@drawable/full_holo_light"
+                android:minWidth="50dp"
+                android:enabled="false"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="11dp"
+            android:layout_marginLeft="-8dp" />
+
+        <EditText android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/potenzaImpegnata"
+                  android:background="@drawable/full_holo_light"
+                  android:minWidth="50dp"
+                  android:enabled="false"
+                  android:gravity="center_vertical|center_horizontal"
+                  android:visibility="gone"
+                  android:textSize="11dp"
+            android:layout_marginLeft="-8dp" />
+        <EditText android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/energyIntervalId"
+                  android:background="@drawable/full_holo_light"
+                  android:minWidth="80dp"
+                  android:enabled="false"
+                  android:gravity="center_horizontal"
+                  android:text="@string/zero"
+                  android:visibility="gone"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/delete"
+            android:layout_marginLeft="3dp" />
+    </LinearLayout>
+</TableRow>

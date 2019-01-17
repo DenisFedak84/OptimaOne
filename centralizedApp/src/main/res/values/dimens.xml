@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    -- Dimensions --
+    <dimen name="main_logo_heigh">130dp</dimen>
+    <dimen name="main_left_right_margin">40dp</dimen>
+    <dimen name="date_picker_textview_width">200dp</dimen>
+    <dimen name="date_picker_textview_height">40dp</dimen>
+    <dimen name="main_page_lable_margin">7dp</dimen>
+    <dimen name="datepicker_left_margin">2dp</dimen>
+    <dimen name="main_page_button_margin">45dp</dimen>
+    <dimen name="main_page_controls_height">150dp</dimen>
+    <dimen name="action_bar_default_height">48dip</dimen>
+    <dimen name="header_lable_margin">5dp</dimen>
+    <dimen name="recycler_view_result_cell">80dp</dimen>
+
+
+    -- Text size --
+    <dimen name="title_text_size">23sp</dimen>
+    <dimen name="main_radio_button_text_size">21sp</dimen>
+    <dimen name="regular_text_size">13sp</dimen>
+    <dimen name="fourteen_text_size">14dp</dimen>
+    <dimen name="eighteen_text_size">18dp</dimen>
+
+    -- Button --
+    <dimen name="optima_button_width">150dp</dimen>
+    <dimen name="optima_button_height">60dp</dimen>
+
+</resources>

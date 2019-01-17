@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light">
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/ragione_sociale"
+                android:textColor="#4d4d4d"
+                android:textStyle="bold|normal"
+                android:textSize="12dp"
+                android:minWidth="80dp"
+                android:layout_weight="1"
+                android:maxWidth="80dp"
+                android:id="@+id/name"
+                android:gravity="center"/>
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/piva"
+                android:layout_gravity="center"
+                android:textColor="#4d4d4d"
+                android:textStyle="bold|normal"
+                android:textSize="12dp"
+                android:minWidth="80dp"
+                android:layout_weight="1.1"
+                android:maxWidth="80dp"
+                android:id="@+id/piva"
+                android:gravity="center"/>
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="#4d4d4d"
+                android:textStyle="bold|normal"
+                android:textSize="12dp"
+                android:minWidth="105dp"
+                android:layout_weight="1.1"
+                android:maxWidth="105dp"
+                android:id="@+id/comune"
+                android:gravity="center"
+                android:text="@string/l_comune"/>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:minWidth="160dp"
+                android:layout_weight="1"
+            android:visibility="gone">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4d4d4d"
+                    android:textSize="11dp"
+                    android:id="@+id/code"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:ellipsize="end"
+                    android:maxWidth="155dp"
+                    android:minLines="1"
+                    android:maxLines="4"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:minWidth="155dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginLeft="4dp"
+                android:textStyle="normal" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4d4d4d"
+                    android:textSize="11dp"
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/ni"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:ellipsize="end"
+                    android:maxWidth="155dp"
+                    android:minLines="1"
+                    android:maxLines="4"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:minWidth="155dp"
+                    android:layout_marginRight="4dp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:textColor="#4d4d4d"
+                android:textStyle="bold|normal"
+                android:textSize="12dp"
+                android:minWidth="120dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/canone_mensile"
+                android:maxWidth="120dp"
+                android:id="@+id/canone"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:textColor="#4d4d4d"
+                android:textStyle="bold|normal"
+                android:textSize="12dp"
+                android:minWidth="120dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/data_create"
+                android:maxWidth="120dp"
+                android:id="@+id/dateDiCreazione"/>
+    </LinearLayout>
+</LinearLayout>

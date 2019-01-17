@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRowEmail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical|center_horizontal"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="left|fill_vertical"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:textColor="@color/optima_lable_color"
+        android:layout_toLeftOf="@+id/removeButton"
+        android:enabled="true"
+        android:editable="true"
+        android:layout_margin="5dp"
+        android:focusableInTouchMode="true"
+        android:focusable="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/removeButton"
+        android:background="@drawable/eliminia_button"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible" />
+</RelativeLayout>

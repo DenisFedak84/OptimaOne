@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="titlebackgroundcolor">#0981b2</color>
+    <color name="transparent">#00000000</color>
+    <color name="orange">#ffa500</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="item_background_lite">#e6e6e6</color>
+    <color name="item_background_blue">#1296cf</color>
+    <color name="red">#cf031e</color>
+    <color name="regime_fiscale_btn_ok">#d20e1c</color>
+    <color name="regime_fiscale_btn_no">#313131</color>
+    <color name="optima_lable_color">#4d4d4d</color>
+    <color name="btn_inactive">#ff868686</color>
+    <color name="holo_red_dark">#ffcc0000</color>
+
+    <color name="filepicker_primary">#0981b2</color>
+    <color name="filepicker_accent">#ff868686</color>
+    <color name="filepicker_primary_dark">#d20e1c</color>
+
+    <color name="progress_start_color">#0ea8d2</color>
+    <color name="progress_end_color">#0e7ad2</color>
+
+    <color name="correct_cell">#7f63d20e</color>
+    <color name="correct_cell_pressed">#7f2a5409</color>
+    <color name="wrong_cell">#7fd2180e</color>
+    <color name="wrong_cell_pressed">#7f590b06</color>
+
+    <color name="disabled_radio_button_text_color">#abaaaa</color>
+    <color name="enabled_radio_button_text_color">#4d4d4d</color>
+</resources>

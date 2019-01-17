@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:paddingBottom="15dp">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pod1"
+            android:id="@+id/tittle" android:textColor="#4d4d4d" android:textSize="14dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                  android:layout_height="wrap_content" android:minWidth="250dp" android:id="@+id/linearLayout1">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="@string/voip" android:id="@+id/textView2" android:textColor="#4d4d4d"
+                  android:textSize="14dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/lineaType"
+                  android:layout_gravity="center_horizontal|top" android:layout_marginLeft="8dp"
+                  android:textColor="#4d4d4d" android:textSize="14dp" android:text="@string/sfd_btn_yes"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:id="@+id/wlrNetworkLayout"
+        android:visibility="gone">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:minWidth="200dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/operatore_p"
+                    android:id="@+id/textView" android:textColor="#4d4d4d" android:textSize="14dp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/operatore" android:layout_gravity="center_horizontal|top"
+                    android:layout_marginLeft="8dp" android:textColor="#4d4d4d" android:textSize="14dp"
+                    android:text="@string/altro_operatore"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:minWidth="150dp" android:id="@+id/datiKwh2">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/rete_p" android:id="@+id/textView4" android:layout_gravity="center"
+                      android:textColor="#4d4d4d" android:textSize="14dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nacked"
+                      android:id="@+id/rete" android:layout_gravity="center"
+                      android:layout_marginLeft="8dp" android:textColor="#4d4d4d" android:textSize="14dp"
+                      android:maxWidth="100dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:id="@+id/linearLayout3">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                      android:visibility="gone" android:layout_height="fill_parent" android:minWidth="400dp" android:id="@+id/lineaDescLayout">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/linea_p"
+                      android:id="@+id/textView5" android:textColor="#4d4d4d" android:textSize="14dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/lineDesc" android:layout_gravity="center_horizontal|top"
+                      android:layout_marginLeft="8dp" android:textColor="#4d4d4d" android:textSize="14dp"
+                      android:text="@string/isdn_pra_con_gnr_selezione_passante" android:maxWidth="350dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                      android:layout_height="fill_parent" android:minWidth="150dp" android:id="@+id/linearLayout2">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/numero_linee"
+                      android:id="@+id/textView7" android:layout_gravity="center" android:textColor="#4d4d4d"
+                      android:textSize="14dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/twelve"
+                      android:id="@+id/numeroLinee" android:layout_gravity="center" android:layout_marginLeft="8dp"
+                      android:textColor="#4d4d4d" android:textSize="14dp" android:maxWidth="100dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:id="@+id/servicesLayout" android:visibility="gone">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                      android:layout_height="fill_parent" android:minWidth="400dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/servizi_aggiuntivi_p"
+                      android:id="@+id/textView9" android:textColor="#4d4d4d" android:textSize="14dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/services" android:layout_gravity="center_horizontal|top"
+                      android:layout_marginLeft="8dp" android:textColor="#4d4d4d" android:textSize="14dp"
+                      android:maxWidth="275dp"
+                    />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                      android:layout_height="fill_parent" android:minWidth="150dp" android:id="@+id/numerazioneAggiuntiviLayout"
+                      android:longClickable="false" android:visibility="gone">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/numerazione_agguintiva_p" android:id="@+id/textView6" android:layout_gravity="center|top"
+                      android:textColor="#4d4d4d" android:textSize="14dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/numerazioneValue" android:layout_gravity="center|top" android:layout_marginLeft="8dp"
+                      android:textColor="#4d4d4d" android:textSize="14dp" android:maxWidth="100dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:id="@+id/gasDetails" android:visibility="gone">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content"
+                      android:layout_height="fill_parent" android:minWidth="250dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/categoria_duso_p" android:id="@+id/textView1" android:textColor="#4d4d4d"
+                      android:textSize="14dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/categoriaDuso" android:layout_gravity="center_horizontal|top"
+                      android:layout_marginLeft="8dp" android:textColor="#4d4d4d" android:textSize="14dp"
+                      android:text="@string/riscaldamento_uso_cottura_cibi_produzione_di_acqua_calda_sanitaria"
+                      android:maxWidth="200dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content"
+                      android:layout_height="fill_parent" android:minWidth="150dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/classe_di_prelievo"
+                      android:id="@+id/textView3" android:layout_gravity="center|top" android:textColor="#4d4d4d"
+                      android:textSize="14dp"/>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/giorni_esclusi_sabati_domeniche_e_festivita_nazionali"
+                      android:id="@+id/classePrelievo" android:layout_gravity="center|top" android:layout_marginLeft="8dp"
+                      android:textColor="#4d4d4d" android:textSize="14dp" android:maxWidth="200dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

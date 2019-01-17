@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!--style="@style/OptimaProgressDialog"-->
+
+    <LinearLayout
+        android:id="@+id/linearLayout40"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/progress_dialog_background"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/main_left_right_margin"
+        android:paddingTop="@dimen/main_left_right_margin"
+        android:paddingRight="@dimen/main_left_right_margin"
+        android:paddingBottom="@dimen/main_page_lable_margin"
+        android:minHeight="130dp">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:id="@+id/progressMessage"
+                android:layout_toLeftOf="@+id/progressValue" />
+
+            <TextView
+                android:id="@+id/progressValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:gravity="right"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminate="false" />
+        <Button
+            android:id="@+id/okButton"
+            style="@style/optimaButtonStyle"
+            android:background="@drawable/red_optima_button_selector"
+            android:text="@string/ok"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/main_page_lable_margin"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/cancel"
+            style="@style/optimaButtonStyle"
+            android:background="@drawable/red_optima_button_selector"
+            android:text="@string/cancel"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/main_page_lable_margin"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout40"
+        android:layout_alignTop="@+id/linearLayout40"
+        android:background="@drawable/progress_dialog_header"
+        android:padding="@dimen/header_lable_margin"
+        android:text="AutoTest progress"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
+
+    <!--style="@style/OptimaProgressDialog"-->

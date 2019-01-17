@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pod1"
+            android:id="@+id/tittle"
+            android:textColor="#4d4d4d"
+            android:textSize="14dp"/>
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/linearLayout">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:minWidth="250dp"
+                android:visibility="gone"
+                android:id="@+id/anno1Layout">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/consumo_annuo_f1_f0"
+                    android:id="@+id/textView"
+                    android:textColor="#4d4d4d"
+                    android:textSize="14dp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/consumoKwh1"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#4d4d4d"
+                    android:textSize="14dp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:minWidth="150dp"
+                android:visibility="gone"
+                android:id="@+id/anno2Layout">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/f2"
+                      android:id="@+id/textView4"
+                      android:layout_gravity="center"
+                      android:textColor="#4d4d4d"
+                      android:textSize="14dp"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/twenty_kwh"
+                      android:id="@+id/consumoKwh2"
+                      android:layout_gravity="center"
+                      android:layout_marginLeft="8dp"
+                      android:textColor="#4d4d4d"
+                      android:textSize="14dp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:minWidth="150dp"
+                android:visibility="gone"
+                android:id="@+id/anno3Layout">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="fill_parent"
+                      android:text="@string/f3"
+                      android:id="@+id/textView6"
+                      android:textColor="#4d4d4d"
+                      android:textSize="14dp"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="fill_parent"
+                      android:text="@string/twenty_kwh"
+                      android:id="@+id/consumoKwh3"
+                      android:layout_marginLeft="8dp"
+                      android:textColor="#4d4d4d"
+                      android:textSize="14dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/intervals_layout"
+            android:layout_marginBottom="15dp">
+    </LinearLayout>
+</LinearLayout>

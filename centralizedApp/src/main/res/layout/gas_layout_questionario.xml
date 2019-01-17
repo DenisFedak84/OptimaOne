@@ -1,0 +1,351 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:baselineAligned="false"
+        android:paddingTop="30dp"
+        android:background="@drawable/main_solid_background">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:baselineAligned="false"
+            android:background="@drawable/main_solid_background"
+            android:id="@+id/linearLayout">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.3">
+
+            <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/logo_large"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="5dp"
+                android:layout_height="fill_parent"
+                android:background="#e6e6e6"/>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.5">
+
+            <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/esci"
+                    android:background="#cf031e"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:onClick="closeAll"
+                    android:shadowColor="@android:color/darker_gray"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="false"
+            android:layout_marginBottom="120dp">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false">
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/energia_utilizzi_gas"
+                        android:textSize="28dp"
+                        android:textIsSelectable="false"
+                        android:textStyle="bold"
+                        android:password="false"
+                        android:textColor="#4d4d4d"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="30dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gas_metano"
+                        android:textSize="28dp"
+                        android:textIsSelectable="false"
+                        android:textStyle="italic"
+                        android:password="false"
+                        android:textColor="#4d4d4d"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="18dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profilo_di_utilizzo"
+                        android:layout_marginLeft="40dp"
+                        android:layout_gravity="center"
+                        android:textIsSelectable="true"
+                        android:textColor="#4d4d4d"
+                        android:textStyle="bold"
+                        android:textSize="12dp"/>
+
+                <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/riscaldamento_autonomo"
+                        android:layout_gravity="center_horizontal|top"
+                        android:checked="false"
+                        android:textSize="12dp"
+                        android:textStyle="italic"
+                        android:textColor="#4d4d4d"
+                        android:id="@+id/riscaldamentoGas"/>
+
+                <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rcottura_cibi"
+                        android:layout_gravity="center"
+                        android:textColor="#4d4d4d"
+                        android:textStyle="italic"
+                        android:textSize="12dp"
+                        android:checked="false"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/cotturacibiGas"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/produzione_acqua_calda"
+                        android:layout_gravity="center_horizontal|top"
+                        android:textColor="#4d4d4d"
+                        android:textSize="12dp"
+                        android:textStyle="italic"
+                        android:checked="false"
+                        android:layout_marginLeft="130dp"
+                        android:id="@+id/produzioneAcquaCaldaGas"
+                        android:layout_marginTop="-10dp"/>
+                <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/condizionamento"
+                        android:layout_gravity="center_horizontal|top"
+                        android:checked="false"
+                        android:textSize="12dp"
+                        android:textStyle="italic"
+                        android:textColor="#4d4d4d"
+                        android:layout_marginTop="-10dp"
+                        android:id="@+id/condizionamentoGas"
+                        android:layout_marginLeft="15dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:gravity="bottom"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="-120dp"
+            android:baselineAligned="false"
+            android:id="@+id/linearLayout1">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="5000"
+                android:clickable="true">
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:layout_gravity="center_horizontal|bottom">
+
+                <ImageButton
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="40dp"
+                        android:background="@drawable/back_button"
+                        android:layout_gravity="bottom"
+                        android:clickable="true"
+                        android:id="@+id/tornaIndietro4"
+                        android:onClick="backAction"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="right">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="right"
+                        android:longClickable="false"
+                        android:visibility="visible"
+                        android:id="@+id/continuaLinearLayout5">
+
+                    <ImageButton
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="bottom|right"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/forward_button"
+                            android:clickable="true"
+                            android:longClickable="false"
+                            android:visibility="visible"
+                            android:id="@+id/continua5"/>
+
+                    <ImageButton
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/forward_button_disabled"
+                            android:clickable="true"
+                            android:visibility="gone"
+                            android:id="@+id/сontinua5disabled"
+                            android:focusableInTouchMode="false"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:background="@drawable/main_solid_background"
+                        android:baselineAligned="false"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginBottom="15dp"
+                        android:visibility="gone"
+                        android:id="@+id/calcolaLinearLayout5">
+
+                    <Button
+                            android:layout_width="150dp"
+                            android:layout_height="54dp"
+                            android:textStyle="bold"
+                            android:shadowColor="@android:color/darker_gray"
+                            android:background="@drawable/calcola"
+                            android:textSize="13dp"
+                            android:id="@+id/calcola5"
+                            android:onClick="calcola"
+                            android:visibility="visible"/>
+
+                    <Button
+                            android:layout_width="150dp"
+                            android:layout_height="54dp"
+                            android:textStyle="bold"
+                            android:shadowColor="@android:color/darker_gray"
+                            android:background="@drawable/calcola_disabled"
+                            android:textSize="13dp"
+                            android:visibility="gone"
+                            android:id="@+id/calcola5Disabled"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:background="@drawable/main_solid_background"
+                        android:baselineAligned="false"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginBottom="15dp"
+                        android:visibility="gone"
+                        android:id="@+id/ricalcolaGasLayout">
+
+                    <Button
+                            android:layout_width="150dp"
+                            android:layout_height="54dp"
+                            android:textStyle="bold"
+                            android:shadowColor="@android:color/darker_gray"
+                            android:textSize="28dp"
+                            android:background="@android:color/white"
+                            android:textColor="@android:color/darker_gray"
+                            android:text="@string/ricalcola"
+                            android:visibility="visible"
+                            android:id="@+id/ricalcolaGas5Disabled"/>
+
+                    <Button
+                            android:layout_width="150dp"
+                            android:layout_height="54dp"
+                            android:textStyle="bold"
+                            android:shadowColor="@android:color/darker_gray"
+                            android:textSize="28dp"
+                            android:background="@android:color/white"
+                            android:textColor="@color/holo_red_dark"
+                            android:text="@string/ricalcola"
+                            android:visibility="gone"
+                            android:id="@+id/ricalcolaGas5"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:gravity="bottom"
+                android:layout_gravity="bottom">
+
+            <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/bottom_line"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

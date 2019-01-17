@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingBottom="15dp">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pod1"
+            android:id="@+id/tittle"
+            android:textColor="#4d4d4d"
+            android:textSize="@dimen/fourteen_text_size"/>
+
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/wlrNetworkLayout">
+        <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:minWidth="200dp">-->
+            <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/router"-->
+                    <!--android:textColor="#4d4d4d"-->
+                    <!--android:textSize="@dimen/fourteen_text_size"/>-->
+            <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal|top"-->
+                    <!--android:layout_marginLeft="8dp"-->
+                    <!--android:textColor="#4d4d4d"-->
+                    <!--android:textSize="@dimen/fourteen_text_size"-->
+                    <!--android:text="@string/acquisto_noleggio"-->
+                    <!--android:id="@+id/router"/>-->
+        <!--</LinearLayout>-->
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:minWidth="150dp"
+                android:focusableInTouchMode="false"
+                android:id="@+id/ipAggiuntiviLayout"
+                android:visibility="gone">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/ip_aggiuntivi"
+                      android:id="@+id/textView4"
+                      android:layout_gravity="center"
+                      android:textColor="#4d4d4d"
+                      android:textSize="@dimen/fourteen_text_size"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/ipAggiuntivi"
+                      android:layout_gravity="center"
+                      android:layout_marginLeft="8dp"
+                      android:textColor="#4d4d4d"
+                      android:textSize="@dimen/fourteen_text_size"
+                      android:maxWidth="100dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/servicesLayout">
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:minWidth="400dp">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/linea_solo_dati"
+                      android:id="@+id/textView9"
+                      android:textColor="#4d4d4d"
+                      android:textSize="@dimen/fourteen_text_size"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/lineaSoloDati"
+                      android:layout_gravity="center_horizontal|top"
+                      android:layout_marginLeft="8dp"
+                      android:textColor="#4d4d4d"
+                      android:textSize="@dimen/fourteen_text_size"
+                      android:maxWidth="450dp"
+                      android:text="@string/no"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/gasDetails"
+                  android:visibility="gone">
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="wrap_content"
+                      android:layout_height="fill_parent"
+                      android:minWidth="250dp">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/categoria_duso"
+                      android:id="@+id/textView1"
+                      android:textColor="#4d4d4d"
+                      android:textSize="@dimen/fourteen_text_size"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/categoriaDuso"
+                      android:layout_gravity="center_horizontal|top"
+                      android:layout_marginLeft="8dp"
+                      android:textColor="#4d4d4d"
+                      android:textSize="@dimen/fourteen_text_size"
+                      android:text="@string/riscaldamento_uso_cottura_cibi_produzione_di_acqua_calda_sanitaria"
+                      android:maxWidth="200dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="wrap_content"
+                      android:layout_height="fill_parent"
+                      android:minWidth="150dp">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/classe_di_prelievo"
+                      android:id="@+id/textView3"
+                      android:layout_gravity="center|top"
+                      android:textColor="#4d4d4d"
+                      android:textSize="@dimen/fourteen_text_size"/>
+            <TextView android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/giorni_esclusi_sabati_domeniche_e_festivita_nazionali"
+                      android:id="@+id/classePrelievo"
+                      android:layout_gravity="center|top"
+                      android:layout_marginLeft="8dp"
+                      android:textColor="#4d4d4d"
+                      android:textSize="@dimen/fourteen_text_size"
+                      android:maxWidth="200dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

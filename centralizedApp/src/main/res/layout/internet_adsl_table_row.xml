@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/currentADSL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/item_background_lite"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/adslName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5.2"
+        android:background="@drawable/full_holo_light"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:textColor="#4d4d4d"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/adslDesc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:background="@drawable/full_holo_light"
+        android:ellipsize="end"
+        android:gravity="center_horizontal|center_vertical"
+        android:lines="1"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp"
+        android:textColor="#4d4d4d"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/attivazione"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4.6"
+        android:background="@drawable/full_holo_light"
+        android:ellipsize="end"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:text="@string/linea_attiva_la"
+        android:textColor="#4d4d4d"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/ipAggiungivi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5.5"
+        android:background="@drawable/full_holo_light"
+        android:ellipsize="end"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:textColor="#4d4d4d"
+        android:textSize="13dp" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/router"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="5.7"-->
+        <!--android:background="@drawable/full_holo_light"-->
+        <!--android:ellipsize="end"-->
+        <!--android:gravity="center_vertical|center_horizontal"-->
+        <!--android:text="@string/no"-->
+        <!--android:textColor="#4d4d4d"-->
+        <!--android:textSize="13dp" />-->
+
+    <TextView
+        android:id="@+id/adslId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:background="@drawable/full_holo_light"
+        android:ellipsize="end"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/f_kwh"
+        android:textColor="#4d4d4d"
+        android:textSize="13dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/deleteAdslButton"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="5.8"
+        android:background="#e6e6e6"
+        android:clickable="true"
+        android:ellipsize="end"
+        android:gravity="center_vertical|center_horizontal"
+        android:longClickable="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/deleteLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/deleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="22"
+                android:background="@drawable/eliminia_button" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

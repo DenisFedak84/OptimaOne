@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="350dp"
+              android:layout_height="wrap_content"
+              android:background="@android:color/background_light">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_gradient_background">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/scegli_il_tipo_di_offerta"
+                android:layout_marginLeft="60dp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light">
+
+        <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:id="@+id/radioGroup"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/offerte_per_servizio"
+                    android:id="@+id/offerte_per_servizio"
+                    android:textColor="@color/black"
+                    android:checked="true"/>
+
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/offerta_unica"
+                    android:id="@+id/offerta_unica"
+                    android:textColor="@color/black"
+                    android:checked="false"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         android:text="@string/componi_offerta"
+                         android:id="@+id/componi_offerta" android:textColor="@color/black"
+                         android:checked="false" android:visibility="visible"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/continua"
+            android:id="@+id/continueBtn"
+            android:minWidth="170dp"
+            android:background="@drawable/dialog_full_holo_red"
+            android:minHeight="60dp"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"/>
+</LinearLayout>

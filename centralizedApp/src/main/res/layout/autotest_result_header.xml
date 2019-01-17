@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:id="@+id/linearLayout">
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:background="@drawable/white_dettaglio_table_cell"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="@dimen/recycler_view_result_cell"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/energy"
+        android:id="@+id/energy"
+        android:background="@drawable/blue_dettaglio_table_cell"
+        android:textColor="@color/white"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:layout_width="@dimen/recycler_view_result_cell"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/gas"
+        android:id="@+id/gas"
+        android:background="@drawable/blue_dettaglio_table_cell"
+        android:textColor="@color/white"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:layout_width="@dimen/recycler_view_result_cell"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/adsl_header"
+        android:background="@drawable/blue_dettaglio_table_cell"
+        android:textColor="@color/white"
+        android:lines="1"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:id="@+id/adsl" />
+
+    <TextView
+        android:layout_width="@dimen/recycler_view_result_cell"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/voce"
+        android:background="@drawable/blue_dettaglio_table_cell"
+        android:textColor="@color/white"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:id="@+id/voce" />
+
+    <TextView
+        android:layout_width="@dimen/recycler_view_result_cell"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/device"
+        android:background="@drawable/blue_dettaglio_table_cell"
+        android:textColor="@color/white"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:id="@+id/device" />
+
+    <TextView
+        android:layout_width="@dimen/recycler_view_result_cell"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/total"
+        android:background="@drawable/blue_dettaglio_table_cell"
+        android:textColor="@color/white"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:id="@+id/total" />
+
+</LinearLayout>

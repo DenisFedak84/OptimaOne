@@ -1,0 +1,980 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_solid_background"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:paddingTop="30dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/main_solid_background"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.3"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/logo_large" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="5dp"
+            android:layout_height="fill_parent"
+            android:background="#e6e6e6"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#cf031e"
+                android:onClick="closeAll"
+                android:shadowColor="@android:color/darker_gray"
+                android:text="@string/esci"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="120dp"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="30dp"
+                    android:password="false"
+                    android:text="@string/energia_indicazioni_da_fattura"
+                    android:textColor="#4d4d4d"
+                    android:textIsSelectable="false"
+                    android:textSize="28dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:password="false"
+                    android:text="@string/gas_metano"
+                    android:textColor="#4d4d4d"
+                    android:textIsSelectable="false"
+                    android:textSize="28dp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/consumo_reale"
+                    android:textColor="#4d4d4d"
+                    android:textIsSelectable="true"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llRegimeFiscale"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:enabled="true"
+                    android:text="@string/regime_fiscale"
+                    android:textColor="#4d4d4d"
+                    android:textIsSelectable="true"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/fiscaleRadioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:clickable="false"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/civile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="120dp"
+                        android:checked="true"
+                        android:clickable="true"
+                        android:enabled="true"
+                        android:text="@string/fiscale_civile"
+                        android:textColor="#4d4d4d"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/industriale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:enabled="true"
+                        android:text="@string/industriale"
+                        android:textColor="#4d4d4d"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTipologiaContratto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:text="@string/tipologia_contratto"
+                    android:textColor="#4d4d4d"
+                    android:textIsSelectable="true"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgTipologiaContratto"
+                    android:layout_width="fill_parent"
+                    android:layout_height="32dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/domestico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:checked="true"
+                        android:text="@string/domestico"
+                        android:textColor="#4d4d4d"
+                        android:textSize="12dp" />
+
+                    <RadioButton
+                        android:id="@+id/altriUsi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:checked="false"
+                        android:text="@string/altri_usi"
+                        android:textColor="#4d4d4d"
+                        android:textSize="12dp" />
+
+                    <RadioButton
+                        android:id="@+id/condominio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:checked="false"
+                        android:text="@string/condominio"
+                        android:textColor="#4d4d4d"
+                        android:textSize="12dp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llComune"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:enabled="true"
+                    android:text="@string/comune_o"
+                    android:textColor="#4d4d4d"
+                    android:textIsSelectable="true"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/comuneAutoCompleteTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="155dp"
+                    android:autoText="true"
+                    android:completionThreshold="3"
+                    android:keepScreenOn="false"
+                    android:minWidth="250dp" />
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:measureWithLargestChild="false"
+                android:showDividers="end">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <RadioButton
+                                android:id="@+id/annuoGas"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="40dp"
+                                android:checked="false"
+                                android:text="@string/annuo"
+                                android:textColor="#4d4d4d"
+                                android:textSize="12dp"
+                                android:textStyle="bold" />
+
+                            <RadioButton
+                                android:id="@+id/intervaloDiTempoGas"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left|center_vertical"
+                                android:layout_marginLeft="40dp"
+                                android:checked="false"
+                                android:text="@string/intervallo_di_tempo"
+                                android:textColor="#4d4d4d"
+                                android:textSize="12dp"
+                                android:textStyle="bold" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="60dp"
+                                android:autoText="false"
+                                android:text="@string/smc"
+                                android:textColor="#4d4d4d"
+                                android:textIsSelectable="true"
+                                android:textSize="12dp"
+                                android:textStyle="italic" />
+
+                            <EditText
+                                android:id="@+id/smcGas"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:enabled="false"
+                                android:inputType="number"
+                                android:maxLength="8"
+                                android:minWidth="100dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="67dp"
+                                android:layout_marginRight="10dp"
+                                android:text="@string/da"
+                                android:textColor="#4d4d4d"
+                                android:textIsSelectable="true"
+                                android:textSize="12dp"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/gasIntervalFrom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:background="@android:color/background_light"
+                                android:clickable="true"
+                                android:enabled="false"
+                                android:focusable="true"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:minWidth="120dp"
+                                android:onClick="changeDateFrom"
+                                android:textColor="@android:color/black" />
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:text="@string/a"
+                                android:textColor="#4d4d4d"
+                                android:textIsSelectable="true"
+                                android:textSize="12dp"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/gasIntervalTo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:background="@android:color/background_light"
+                                android:clickable="true"
+                                android:enabled="false"
+                                android:focusable="true"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:minWidth="120dp"
+                                android:onClick="changeDateTo"
+                                android:textColor="@android:color/black" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="240dp"
+                            android:text="@string/smc"
+                            android:textColor="#4d4d4d"
+                            android:textIsSelectable="true"
+                            android:textSize="12dp"
+                            android:textStyle="italic" />
+
+                        <EditText
+                            android:id="@+id/smcGasIntervallo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:enabled="false"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:minWidth="100dp" />
+                    </LinearLayout>
+                </TableRow>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="18dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="40dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/categoria_di_utilizzo"
+                            android:textColor="#4d4d4d"
+                            android:textIsSelectable="true"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/categoria_di_utilizzo"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:clickable="true" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llClasseDiPrelievo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/classe_di_prelievo"
+                            android:textColor="#4d4d4d"
+                            android:textIsSelectable="true"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/classe_di_prelievo"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:clickable="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <LinearLayout
+                        android:id="@+id/GasAggiungiPlusButtonLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/plusButtonGas"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="40dp"
+                            android:background="@drawable/netvibes"
+                            android:clickable="false"
+                            android:focusable="true" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/aggiungi_intervallo"
+                            android:textColor="#4d4d4d"
+                            android:textIsSelectable="true"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/dynamicTableGas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/background_light"
+                android:divider="@android:color/black"
+                android:showDividers="beginning|middle|end"
+                android:visibility="gone">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#e6e6e6">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="#dfe0e1"
+                            android:gravity="center_horizontal"
+                            android:maxWidth="120dp"
+                            android:minWidth="120dp"
+                            android:text="@string/da"
+                            android:textColor="#4d4d4d" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#dfe0e1"
+                            android:gravity="center_horizontal"
+                            android:maxWidth="120dp"
+                            android:minWidth="120dp"
+                            android:text="@string/a"
+                            android:textColor="#4d4d4d" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#dfe0e1"
+                            android:gravity="center_horizontal"
+                            android:minWidth="120dp"
+                            android:text="@string/smc"
+                            android:textColor="#4d4d4d" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/grey_line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="10"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/modificaPDRLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/modificaButton"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:background="@drawable/full_holo_light"
+                        android:text="@string/modifica_pdr"
+                        android:textColor="@color/holo_red_dark"
+                        android:textSize="12dp" />
+
+                    <Button
+                        android:id="@+id/annulaButton"
+                        android:layout_width="150dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/full_holo_light"
+                        android:text="@string/annulla"
+                        android:textColor="@color/holo_red_dark"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/addPdrButtonlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="right"
+                        android:text="@string/aggiungi_pdr"
+                        android:textColor="#4d4d4d"
+                        android:textIsSelectable="true"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/addPdrEnabled"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal|bottom|right"
+                        android:background="@drawable/plus_enabled"
+                        android:clickable="true"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/addPdrDisabled"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal|bottom|right"
+                        android:background="@drawable/plus"
+                        android:clickable="true"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/PDRLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/headers"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|top"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="5.45"
+                        android:gravity="center|center_vertical|center_horizontal"
+                        android:text="@string/pdr"
+                        android:textColor="#4d4d4d"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="5.3"
+                        android:gravity="center|center_vertical|center_horizontal"
+                        android:text="@string/comune"
+                        android:textColor="#4d4d4d"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="5.35"
+                        android:gravity="center|center_vertical|center_horizontal"
+                        android:text="@string/regime_fiscale"
+                        android:textColor="#4d4d4d"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="5"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/categoria_di_utilizzo"
+                        android:textColor="#4d4d4d"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="5"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/classe_di_prelievo"
+                        android:textColor="#4d4d4d"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="5.2"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/consumo_annuo"
+                        android:textColor="#4d4d4d"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="5.2"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/consumo_intervallo_di_tempo"
+                        android:textColor="#4d4d4d"
+                        android:textSize="13dp" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="5.5"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:longClickable="false"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="22"
+                            android:background="@drawable/eliminia_button"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="-120dp"
+        android:layout_weight="0.2"
+        android:baselineAligned="false"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5000"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/tornaIndietro4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/back_button"
+                    android:clickable="true"
+                    android:onClick="backAction" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/continuaLinearLayout5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="right"
+                    android:longClickable="false"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageButton
+                        android:id="@+id/continua5"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@drawable/forward_button"
+                        android:clickable="true"
+                        android:longClickable="false"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/сontinua5disabled"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@drawable/forward_button_disabled"
+                        android:clickable="true"
+                        android:focusableInTouchMode="false"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/calcolaLinearLayout5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/main_solid_background"
+                    android:baselineAligned="false"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/calcola5"
+                        android:layout_width="150dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/calcola"
+                        android:onClick="calcola"
+                        android:shadowColor="@android:color/darker_gray"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/calcola5Disabled"
+                        android:layout_width="150dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/calcola_disabled"
+                        android:shadowColor="@android:color/darker_gray"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ricalcolaGasLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/main_solid_background"
+                    android:baselineAligned="false"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/ricalcolaGas5Disabled"
+                        android:layout_width="150dp"
+                        android:layout_height="54dp"
+                        android:background="@android:color/white"
+                        android:shadowColor="@android:color/darker_gray"
+                        android:text="@string/ricalcola"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="28dp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/ricalcolaGas5"
+                        android:layout_width="150dp"
+                        android:layout_height="54dp"
+                        android:background="@android:color/white"
+                        android:shadowColor="@android:color/darker_gray"
+                        android:text="@string/ricalcola"
+                        android:textColor="@color/holo_red_dark"
+                        android:textSize="28dp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/blue_gradient_background" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

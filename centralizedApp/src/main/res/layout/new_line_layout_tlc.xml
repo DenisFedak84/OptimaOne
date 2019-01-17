@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/currentLine">
+    <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/linea"
+              android:background="@drawable/full_holo_light" android:layout_gravity="center"
+              android:gravity="center_vertical|center_horizontal" android:minWidth="120dp" android:layout_weight="4.87"
+              android:paddingRight="15dp" android:paddingLeft="15dp" android:text="@string/linea_11" android:textSize="11dp"
+              android:textColor="#4d4d4d"/>
+
+    <TextView
+        android:id="@+id/rete"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="5"
+        android:background="@drawable/full_holo_light"
+        android:gravity="center_vertical|center_horizontal"
+        android:minWidth="120dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="#4d4d4d"
+        android:textSize="11dp" />
+
+    <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/lineType"
+              android:background="@drawable/full_holo_light" android:layout_gravity="center"
+              android:gravity="center_vertical|center_horizontal" android:minWidth="120dp" android:layout_weight="5.02"
+              android:paddingRight="15dp" android:paddingLeft="15dp" android:textSize="11dp" android:textColor="#4d4d4d"
+              android:text="@string/isdn"/>
+    <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/numLines"
+              android:background="@drawable/full_holo_light" android:layout_gravity="center"
+              android:gravity="center_vertical|center_horizontal" android:minWidth="120dp" android:layout_weight="5.03"
+              android:paddingRight="15dp" android:paddingLeft="15dp" android:textSize="11dp" android:textColor="#4d4d4d"
+              android:text="@string/fotyone"/>
+    <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/textView16"
+              android:background="@drawable/full_holo_light" android:layout_gravity="center"
+              android:gravity="center_vertical|center_horizontal" android:minWidth="120dp" android:layout_weight="5.2"
+              android:paddingRight="15dp" android:paddingLeft="15dp" android:textSize="11dp" android:textColor="#4d4d4d"
+              android:text="@string/fotyone" android:visibility="gone"/>
+    <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/numerazioneAggiuntive"
+              android:background="@drawable/full_holo_light" android:layout_gravity="center"
+              android:gravity="center_vertical|center_horizontal" android:minWidth="120dp" android:layout_weight="4.85"
+              android:paddingRight="15dp" android:paddingLeft="15dp" android:textSize="11dp" android:textColor="#4d4d4d"
+              android:text="@string/nintytwo"/>
+    <TextView android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:id="@+id/services"
+              android:background="@drawable/full_holo_light" android:layout_gravity="center"
+              android:gravity="center_vertical|center_horizontal" android:minWidth="120dp" android:layout_weight="3.7"
+              android:paddingRight="15dp" android:paddingLeft="15dp" android:textSize="11dp" android:textColor="#4d4d4d"
+              android:text="@string/chi_trasferimento_di_chiamata"/>
+</LinearLayout>

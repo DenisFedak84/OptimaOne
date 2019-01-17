@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/impostazioni"
+        android:orderInCategory="50"
+        android:title="@string/impostazioni" />
+    <item
+        android:id="@+id/autotest"
+        android:orderInCategory="50"
+        android:title="@string/autotest" />
+    <item
+        android:id="@+id/esci"
+        android:orderInCategory="50"
+        android:title="@string/esci" />
+</menu>

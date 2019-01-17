@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:background="@color/item_background_lite" android:id="@+id/currentADSL"
+              android:gravity="center_vertical|left">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:id="@+id/spinnerName" android:textSize="13dp"
+              android:gravity="center|center_vertical|center_horizontal" android:textColor="#4d4d4d"
+              android:text="@string/spinner_name"
+              android:layout_margin="7dp"/>
+    <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/serviceSpinner"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="3dp"
+            android:spinnerMode="dialog"
+            android:visibility="visible"
+            android:gravity="left|top"
+            style="@style/mySpinnerStyle"
+            android:layout_marginLeft="38dp"
+            android:layout_marginRight="43dp"
+            android:paddingLeft="20dp"/>
+    <TextView android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/lastId"
+              android:textSize="13dp"
+              android:layout_weight="5"
+              android:gravity="center_vertical|center_horizontal"
+              android:textColor="#4d4d4d"
+              android:background="@drawable/full_holo_light"
+              android:visibility="gone"
+              android:text="0"/>
+</LinearLayout>

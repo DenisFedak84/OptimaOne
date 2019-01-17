@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/item_background_lite"
+    android:id="@+id/linearLayout43"
+    android:gravity="center_vertical|center_horizontal">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/deviceName"
+        android:textSize="13dp"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:textColor="#4d4d4d"
+        android:background="@drawable/full_holo_light"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tipoDevice"
+        android:textSize="13dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#4d4d4d"
+        android:background="@drawable/full_holo_light"
+        android:layout_weight="0.5" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/deviceId"
+        android:textSize="13dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#4d4d4d"
+        android:background="@drawable/full_holo_light"
+        android:layout_weight="0.5"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_gravity="center"
+        android:longClickable="false"
+        android:id="@+id/linearLayout35"
+        android:clickable="true"
+        android:background="#e6e6e6"
+        android:layout_weight="1.3">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/deleteButtonLayout"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/eliminia_button"
+                android:layout_gravity="center"
+                android:layout_weight="22"
+                android:id="@+id/imageView3" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

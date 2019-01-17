@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aimprosoft.android.optima.centralizedApp"
+    android:versionCode="1"
+    android:versionName="2.8.3">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".app.MyApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name_prod"
+        android:largeHeap="true">
+        <activity
+            android:name="com.aimprosoft.android.optima.centralizedApp.activity.optilife.LoginActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:icon="@drawable/ic_launcher"
+            android:noHistory="true"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.aimprosoft.android.optima.centralizedApp.activity.optilife.TipologiaOfferta"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.aimprosoft.android.optima.centralizedApp.activity.optilife.Gas"
+            android:configChanges="keyboardHidden|orientation"
+            android:noHistory="true"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <activity
+            android:name="com.aimprosoft.android.optima.centralizedApp.activity.optilife.MobilePage"
+            android:configChanges="keyboardHidden|orientation"
+            android:noHistory="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.aimprosoft.android.optima.centralizedApp.activity.optilife.AssicurazionePage"
+            android:configChanges="keyboardHidden|orientation"
+            android:noHistory="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.aimprosoft.android.optima.centralizedApp.activity.optilife.TLC"
+            android:configChanges="keyboardHidden|orientation"
+            android:noHistory="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.aimprosoft.android.optima.centralizedApp.activity.optilife.EnergeticiLaFattura"
+            android:configChanges="keyboardHidden|orientation"
+            android:noHistory="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.aimprosoft.android.optima.centralizedApp.activity.optilife.Canone"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.aimprosoft.android.optima.centralizedApp.activity.optilife.Archivio"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.aimprosoft.android.optima.centralizedApp.activity.optilife.EnergeticiQuestionario"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.aimprosoft.android.optima.centralizedApp.activity.optilife.GasQuestionario"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.aimprosoft.android.optima.centralizedApp.activity.optilife.Dettaglio"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.aimprosoft.android.optima.centralizedApp.activity.optilife.Modifica"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.aimprosoft.android.optima.centralizedApp.activity.optilife.ConfigActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.aimprosoft.android.optima.centralizedApp.activity.optilife.AggiungiServizio"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.aimprosoft.android.optima.centralizedApp.activity.optilife.MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.aimprosoft.android.optima.centralizedApp.activity.optilife.AutoTestActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.aimprosoft.android.optima.centralizedApp.activity.optilife.DevicePage"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.aimprosoft.android.optima.centralizedApp.activity.wvoce.GetOffersByPivaActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="optima_one_getOffers" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.nononsenseapps.filepicker.FilePickerActivity"
+            android:theme="@style/FilePickerTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.aimprosoft.android.optima.centralizedApp.activity.itus.IntegrationActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="com.aimprosoft.android.optima.OptimaOne_getDataForITUS" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.aimprosoft.android.optima.centralizedApp.util.CacheContentProvider"
+            android:authorities="com.aimprosoft.android.optima.centralizedApp.util.CacheContentProvider"
+            android:exported="true" />
+
+        <receiver android:name=".app.receiver.LogoutTimeReceiver" />
+
+        <receiver android:name=".app.receiver.DeviceDateChangeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".app.receiver.BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="50f6d5652bf603a14d0933f59a2a6014a95cf214" />
+
+        <!--<receiver android:name=".app.receiver.ConnectionChangeReceiver" >-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />-->
+        <!--<action android:name="android.net.wifi.WIFI_STATE_CHANGED" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+    </application>
+
+</manifest>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+
+    <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/lineNumber"
+              android:background="@drawable/full_holo_light" android:layout_gravity="center"
+              android:gravity="center_vertical|center_horizontal" android:minWidth="120dp" android:layout_weight="6.4"
+              android:paddingRight="15dp" android:paddingLeft="15dp" />
+    <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/lineType"
+              android:background="@drawable/full_holo_light" android:layout_gravity="center"
+              android:gravity="center_vertical|center_horizontal" android:minWidth="120dp" android:layout_weight="6.6"
+              android:paddingRight="15dp" android:paddingLeft="15dp" />
+    <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/numeroLine"
+              android:background="@drawable/full_holo_light" android:layout_gravity="center"
+              android:gravity="center_vertical|center_horizontal" android:minWidth="120dp" android:layout_weight="6.5"
+              android:paddingRight="15dp" android:paddingLeft="15dp" />
+    <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/nimerazione"
+              android:background="@drawable/full_holo_light" android:layout_gravity="center"
+              android:gravity="center_vertical|center_horizontal" android:minWidth="120dp" android:layout_weight="6.5"
+              android:paddingRight="15dp" android:paddingLeft="15dp" />
+    <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/services"
+              android:background="@drawable/full_holo_light" android:layout_gravity="center"
+              android:gravity="center_vertical|center_horizontal" android:minWidth="120dp" android:layout_weight="4.1"
+              android:paddingRight="15dp" android:paddingLeft="15dp" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_text"
+              android:id="@+id/entityId" android:visibility="gone" android:layout_weight="5"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:layout_weight="6.8" android:gravity="center_vertical|center_horizontal"
+                  android:layout_gravity="center" android:longClickable="false" android:id="@+id/deleteRowButton">
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/eliminia_button"
+                   android:layout_gravity="center"
+                   android:layout_weight="22"/>
+    </LinearLayout>
+</LinearLayout>

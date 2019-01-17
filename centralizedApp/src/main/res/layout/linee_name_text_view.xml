@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/pod_1"
+          android:textSize="15dp"
+          android:textIsSelectable="false"
+          android:password="false"
+          android:textColor="#4d4d4d"
+          android:layout_marginLeft="40dp"
+          android:layout_marginTop="7dp"
+          android:minWidth="143dp"
+          android:id="@+id/textView"
+          android:gravity="center"
+          android:layout_weight="6.8"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:paddingTop="7dp"
+          android:paddingLeft="40dp">
+          </TextView>

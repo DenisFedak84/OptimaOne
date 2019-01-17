@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="text_red">-3210466</integer>
+    <integer name="text_black">-16777216</integer>
+    <integer name="text_grey">-5658199</integer>
+    <integer name="pod_field_max_lenght">15</integer>
+
+    --- Excel test file's indexes config ---
+
+    //Genaral indexes
+    <integer name="id_caso_test">0</integer>
+    <integer name="servizi">1</integer>
+
+    // Energy genaral indexes
+    <integer name="id_pod">2</integer>
+
+    // Energy business test file's indexes
+    <integer name="codice_pod_business">5</integer>
+    <integer name="tensione_business">3</integer>
+    <integer name="tariffa_business">4</integer>
+    <integer name="potenza_business">6</integer>
+    <integer name="consumo_annuo_f1_f0_business">7</integer>
+    <integer name="consumo_annuo_f2_business">8</integer>
+    <integer name="consumo_annuo_f3_business">9</integer>
+    <integer name="intervallo_di_tiempo_da_business">10</integer>
+    <integer name="intervallo_di_tiempo_a_business">11</integer>
+    <integer name="consumo_intervallo_di_tiempo_f0_f1_business">12</integer>
+    <integer name="consumo_intervallo_di_tiempo_f2_business">13</integer>
+    <integer name="consumo_intervallo_di_tiempo_f3_business">14</integer>
+    <integer name="result_potenza_business">47</integer>
+    <integer name="result_taglia_mese_business">48</integer>
+    <integer name="result_prezzo_ee_con_business">49</integer>
+    <integer name="result_prezzo_ee_con_iva_business">50</integer>
+    <integer name="result_sforamento_business">51</integer>
+    <integer name="result_mancato_consumo_business">52</integer>
+    <integer name="result_codice_tariffa_business">53</integer>
+    <integer name="result_opzione_tariffaria_business">88</integer>
+    <integer name="result_perc_energy_business">90</integer>
+
+    // Gas Business test file indexes
+    <integer name="id_pdr_business">15</integer>
+    <integer name="comune_business">16</integer>
+    <integer name="regime_fiscale_business">18</integer>
+    <integer name="consumo_annuo_business">19</integer>
+    <integer name="intervallo_tempo_da_gas_business">20</integer>
+    <integer name="intervallo_tempo_a_gas_business">21</integer>
+    <integer name="consumo_intervallo_tempo_gas_busines">22</integer>
+    <integer name="categoria_di_utilizzo_business">23</integer>
+    <integer name="classe_di_prelievo_business">24</integer>
+    <integer name="result_taglia_mese_gas_business">55</integer>
+    <integer name="result_prezzo_gas_business">56</integer>
+    <integer name="result_prezzo_gas_con_iva_business">57</integer>
+    <integer name="result_sforamento_gas_business">58</integer>
+    <integer name="result_mancato_consumo_gas_business">59</integer>
+    <integer name="result_codice_tariffa_gas_business">60</integer>
+    <integer name="result_comune_gas_business">95</integer>
+    <integer name="result_perc_gas_business">96</integer>
+
+    // Voce Business test file indexes
+    <integer name="id_voce_business">25</integer>
+    <integer name="offerta_configurata_business">29</integer>
+    <integer name="pachetto_vs_fissi_business">26</integer>
+    <integer name="pachetto_vs_mobile_business">27</integer>
+    <integer name="operatore_business">30</integer>
+    <integer name="rete_business">31</integer>
+    <integer name="tipologia_linea_business">32</integer>
+    <integer name="num_linee_business">33</integer>
+    <integer name="numero_canali_business">34</integer>
+    <integer name="servizi_aggiuntivi_1_business">35</integer>
+    <integer name="servizi_aggiuntivi_2_business">36</integer>
+    <integer name="servizi_aggiuntivi_3_business">37</integer>
+    <integer name="servizi_aggiuntivi_4_business">38</integer>
+    <integer name="quantita_numerazioni_aggiuntive_business">39</integer>
+    <integer name="result_minuti_verso_fissi_voce_business">62</integer>
+    <integer name="result_minuti_verso_mobile_voce_business">63</integer>
+    <integer name="result_prezzo_voce_business">64</integer>
+    <integer name="result_prezzo_con_iva_voce_business">65</integer>
+    <integer name="result_perc_voce_business">101</integer>
+
+    // ADSL Business test file indexes
+    <integer name="id_adsl_business">40</integer>
+    <integer name="tipologia_adsl_business">41</integer>
+    <integer name="ip_aggiuntivi_adsl_business">42</integer>
+    <integer name="linea_solo_dati_adsl_business">43</integer>
+    <integer name="result_tipologia_adsl_business">67</integer>
+    <integer name="result_prezzo_adsl_business">68</integer>
+    <integer name="result_prezzo_adsl_con_iva_business">69</integer>
+    <integer name="result_perc_adsl_business">104</integer>
+    <integer name="result_tipo_adsl">103</integer>
+
+    //Device Business test file indexes
+    <integer name="id_device_business">70</integer>
+    <integer name="tipo_device_business">71</integer>
+    <integer name="canone_device_business">72</integer>
+    <integer name="canone_device_con_iva_business">73</integer>
+
+    //general results business
+    <integer name="canone_mensile_business">75</integer>
+    <integer name="canone_mensile_device_business">83</integer>
+    <integer name="canone_mensile_con_iva_business">76</integer>
+    <integer name="conto_relax_business">77</integer>
+    <integer name="costo_attivazione_business">78</integer>
+    <integer name="canone_iva_esclusa_business">82</integer>
+
+    //general results consumer
+    <integer name="canone_mensile_consumer">72</integer>
+    <integer name="canone_mensile_con_iva_consumer">73</integer>
+    <integer name="canone_mensile_device_consumer">82</integer>
+    <integer name="conto_relax_consumer">74</integer>
+    <integer name="costo_attivazione_consumer">75</integer>
+    <integer name="canone_iva_esclusa_consumer">80</integer>
+
+    // Energy Consumer test file indexes
+    <integer name="tipologia_cliente_consumer">3</integer>
+    <integer name="codice_pod_consumer">4</integer>
+    <integer name="tipologia_duso">5</integer>
+    <integer name="potenza_consumer">6</integer>
+    <integer name="tariffa_consumer">7</integer>
+    <integer name="consumo_annuo_f1_f0_consumer">8</integer>
+    <integer name="consumo_annuo_f2_consumer">9</integer>
+    <integer name="consumo_annuo_f3_consumer">10</integer>
+    <integer name="intervallo_di_tiempo_da_consumer">11</integer>
+    <integer name="intervallo_di_tiempo_a_consumer">12</integer>
+    <integer name="consumo_intervallo_di_tiempo_f0_f1_consumer">13</integer>
+    <integer name="consumo_intervallo_di_tiempo_f2_consumer">14</integer>
+    <integer name="consumo_intervallo_di_tiempo_f3_consumer">15</integer>
+    <integer name="result_potenza_consumer">44</integer>
+    <integer name="result_taglia_mese_consumer">45</integer>
+    <integer name="result_prezzo_ee_con_consumer">46</integer>
+    <integer name="result_prezzo_ee_con_iva_consumer">47</integer>
+    <integer name="result_sforamento_consumer">48</integer>
+    <integer name="result_mancato_consumo_consumer">49</integer>
+    <integer name="result_codice_tariffa_consumer">50</integer>
+    <integer name="result_opzione_tariffaria_consumer">87</integer>
+    <integer name="result_perc_energy_consumer">89</integer>
+
+    // Gas Consumer test file indexes
+    <integer name="id_pdr_consumer">16</integer>
+    <integer name="comune_consumer">17</integer>
+    <integer name="tipologia_duso_business">18</integer>
+    <integer name="consumo_annuo_consumer">20</integer>
+    <integer name="intervallo_tempo_da_gas_consumer">21</integer>
+    <integer name="intervallo_tempo_a_gas_consumer">22</integer>
+    <integer name="consumo_intervallo_tempo_gas_consumer">23</integer>
+    <integer name="categoria_di_utilizzo_consumer">24</integer>
+    <integer name="result_taglia_mese_gas_consumer">52</integer>
+    <integer name="result_prezzo_gas_consumer">53</integer>
+    <integer name="result_prezzo_gas_con_iva_consumer">54</integer>
+    <integer name="result_sforamento_gas_consumer">55</integer>
+    <integer name="result_mancato_consumo_gas_consumer">56</integer>
+    <integer name="result_codice_tariffa_gas_consumer">57</integer>
+    <integer name="result_comune_gas_consumer">93</integer>
+    <integer name="result_perc_gas_consumer">94</integer>
+
+    // Voce Consumer test file indexes
+    <integer name="id_voce_consumer">25</integer>
+    <integer name="pachetto_vs_fissi_consumer">26</integer>
+    <integer name="pachetto_vs_mobile_consumer">27</integer>
+    <integer name="operatore_consumer">29</integer>
+    <integer name="rete_consumer">30</integer>
+    <integer name="tipologia_linea_consumer">31</integer>
+    <integer name="num_linee_consumer">32</integer>
+    <integer name="servizi_aggiuntivi_1_consumer">33</integer>
+    <integer name="servizi_aggiuntivi_2_consumer">34</integer>
+    <integer name="servizi_aggiuntivi_3_consumer">35</integer>
+    <integer name="servizi_aggiuntivi_4_consumer">36</integer>
+    <integer name="result_minuti_verso_fissi_voce_consumer">59</integer>
+    <integer name="result_minuti_verso_mobile_voce_consumer">60</integer>
+    <integer name="result_prezzo_voce_consumer">61</integer>
+    <integer name="result_prezzo_con_iva_voce_consumer">62</integer>
+    <integer name="result_perc_voce_consumer">99</integer>
+
+    // ADSL Consumer test file indexes
+    <integer name="id_adsl_consumer">37</integer>
+    <integer name="tipologia_adsl_consumer">38</integer>
+    <integer name="ip_aggiuntivi_adsl_consumer">39</integer>
+    <integer name="linea_solo_dati_adsl_consumer">40</integer>
+    <integer name="result_tipologia_adsl_consumer">64</integer>
+    <integer name="result_prezzo_adsl_consumer">65</integer>
+    <integer name="result_prezzo_adsl_con_iva_consumer">66</integer>
+    <integer name="result_perc_adsl_consumer">102</integer>
+    <integer name="result_tipo_consumer">101</integer>
+
+    //Device Consumer test file indexes
+    <integer name="id_device_consumer">67</integer>
+    <integer name="tipo_device_consumer">68</integer>
+    <integer name="canone_device_consumer">69</integer>
+    <integer name="canone_device_con_iva_consumer">70</integer>
+
+</resources>

@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_solid_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/action_bar_default_height"
+            android:layout_weight="0.9"
+            android:clickable="false"
+            android:orientation="vertical"
+            android:longClickable="false">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/main_logo_heigh"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/background_light"
+                    android:contentDescription="@string/main_logo"
+                    android:cropToPadding="false"
+                    android:src="@drawable/logo_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/main_left_right_margin"
+                android:layout_marginRight="@dimen/main_left_right_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/action_bar_default_height"
+                    android:text="@string/offerta_commerciale_per"
+                    android:textColor="@color/optima_lable_color"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/title_text_size"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/check_busisnes_consumer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/configuratorTypeRadioGroup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/businessRadioButton"
+                            style="@style/optimaRadioButtonLargeStyle"
+                            android:checked="false"
+                            android:text="@string/business" />
+
+                        <RadioButton
+                            android:id="@+id/consumerRadioButton"
+                            style="@style/optimaRadioButtonLargeStyle"
+                            android:text="@string/consumer"
+                            android:layout_marginLeft="@dimen/main_left_right_margin"
+                            android:checked="false" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/businessLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/main_page_lable_margin">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/main_page_lable_margin"
+                            android:layout_weight="5"
+                            android:gravity="center_vertical|right"
+                            android:text="@string/ragione_sociale"
+                            android:textColor="@color/optima_lable_color"
+                            android:textIsSelectable="false"
+                            android:textSize="@dimen/regular_text_size"
+                            android:textStyle="bold" />
+
+                        <AutoCompleteTextView
+                            android:id="@+id/ragioneSocialeAutocomplete"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:completionThreshold="3"
+                            android:inputType="textAutoComplete"
+                            android:keepScreenOn="false"
+                            android:singleLine="false" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/main_page_lable_margin">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="5"
+                            android:gravity="center_vertical|right"
+                            android:paddingRight="@dimen/main_page_lable_margin"
+                            android:text="@string/p_iva_cf"
+                            android:textColor="@color/optima_lable_color"
+                            android:textIsSelectable="false"
+                            android:textSize="@dimen/regular_text_size"
+                            android:textStyle="bold" />
+
+                        <AutoCompleteTextView
+                            android:id="@+id/pivaAutocomplete"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:completionThreshold="3"
+                            android:inputType="textAutoComplete"
+                            android:keepScreenOn="false"
+                            android:maxLength="11" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/main_page_lable_margin">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/main_page_lable_margin"
+                            android:layout_weight="5"
+                            android:gravity="center_vertical|right"
+                            android:text="@string/comune"
+                            android:textColor="@color/optima_lable_color"
+                            android:textIsSelectable="false"
+                            android:textSize="@dimen/regular_text_size"
+                            android:textStyle="bold" />
+
+                        <AutoCompleteTextView
+                            android:id="@+id/comuneAutoCompleteTextView"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:completionThreshold="3"
+                            android:inputType="textAutoComplete"
+                            android:keepScreenOn="false" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/main_page_lable_margin"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/main_page_lable_margin"
+                            android:layout_weight="5"
+                            android:gravity="center_vertical|right"
+                            android:text="@string/indirizzo_e_mail_pec"
+                            android:textColor="@color/optima_lable_color"
+                            android:textIsSelectable="false"
+                            android:textSize="@dimen/regular_text_size"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/mail"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:inputType="text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/main_page_lable_margin"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/main_page_lable_margin"
+                            android:layout_weight="5"
+                            android:gravity="center_vertical|right"
+                            android:text="@string/convenzione"
+                            android:textColor="@color/optima_lable_color"
+                            android:textIsSelectable="false"
+                            android:textSize="@dimen/regular_text_size"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/agreements"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="left" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_di_fornitura_busines"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/main_page_lable_margin"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/main_page_lable_margin"
+                            android:layout_weight="5"
+                            android:gravity="center_vertical|right"
+                            android:text="@string/indirizzo_di_fornitura"
+                            android:textColor="@color/optima_lable_color"
+                            android:textSize="@dimen/regular_text_size"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/indirizzoDiFornitura_busines"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:inputType="text"
+                            android:singleLine="false" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="7dp"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/main_page_lable_margin">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/main_page_lable_margin"
+                            android:layout_weight="5"
+                            android:gravity="center_vertical|right"
+                            android:text="@string/cap"
+                            android:textColor="@color/optima_lable_color"
+                            android:textIsSelectable="false"
+                            android:textSize="@dimen/regular_text_size"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/cap_busines"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:enabled="true"
+                            android:focusable="true"
+                            android:gravity="bottom"
+                            android:inputType="number"
+                            android:singleLine="false" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/consumerLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="5"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="8">
+
+                            <CheckBox
+                                android:id="@+id/centroCommerciale"
+                                style="@style/optimaRadioButtonStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:text="@string/centro_commerciale"
+                                android:layout_gravity="center_horizontal" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/main_page_lable_margin"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/main_page_lable_margin"
+                            android:layout_weight="5"
+                            android:gravity="center_vertical|right"
+                            android:text="@string/nome"
+                            android:textColor="@color/optima_lable_color"
+                            android:textSize="@dimen/regular_text_size"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/nome"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="bottom"
+                            android:inputType="text"
+                            android:singleLine="false"
+                            android:textColor="@color/red" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="7dp"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/main_page_lable_margin"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/main_page_lable_margin"
+                            android:layout_weight="5"
+                            android:gravity="center_vertical|right"
+                            android:text="@string/cognome"
+                            android:textColor="@color/optima_lable_color"
+                            android:textIsSelectable="false"
+                            android:textSize="@dimen/regular_text_size"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/cognome"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="bottom"
+                            android:inputType="text"
+                            android:singleLine="false"
+                            android:textColor="@color/red" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="7dp"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/main_page_lable_margin"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/main_page_lable_margin"
+                            android:layout_weight="5"
+                            android:gravity="center_vertical|right"
+                            android:minWidth="100dp"
+                            android:text="@string/dati_di_nascita"
+                            android:textColor="@color/optima_lable_color"
+                            android:textIsSelectable="false"
+                            android:textSize="@dimen/regular_text_size"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/dataDiNascita"
+                                android:layout_width="@dimen/date_picker_textview_width"
+                                android:layout_height="@dimen/date_picker_textview_height"
+                                android:layout_gravity="left|center_vertical"
+                                android:layout_marginLeft="@dimen/datepicker_left_margin"
+                                android:background="@android:color/background_light"
+                                android:clickable="true"
+                                android:gravity="center_vertical|left"
+                                android:onClick="changeDate"
+                                android:paddingLeft="@dimen/main_page_lable_margin"
+                                android:textColor="@android:color/black" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/main_page_lable_margin"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/main_page_lable_margin"
+                            android:layout_weight="5"
+                            android:gravity="center_vertical|right"
+                            android:text="@string/sesso"
+                            android:textColor="@color/optima_lable_color"
+                            android:textIsSelectable="false"
+                            android:textSize="@dimen/regular_text_size"
+                            android:textStyle="bold" />
+
+                        <RadioGroup
+                            android:id="@+id/sessoRadioGroup"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_weight="2"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radioButtonM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="30dp"
+                                android:checked="true"
+                                android:text="@string/male"
+                                android:textColor="@color/optima_lable_color"
+                                android:textSize="@dimen/regular_text_size"
+                                android:textStyle="italic" />
+
+                            <RadioButton
+                                android:id="@+id/radioButtonF"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:checked="false"
+                                android:text="@string/female"
+                                android:textColor="@color/optima_lable_color"
+                                android:textSize="@dimen/regular_text_size"
+                                android:textStyle="italic" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="7dp"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/main_page_lable_margin"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/main_page_lable_margin"
+                            android:layout_weight="5"
+                            android:gravity="center_vertical|right"
+                            android:text="@string/comune_di_nascita"
+                            android:textColor="@color/optima_lable_color"
+                            android:textIsSelectable="false"
+                            android:textSize="@dimen/regular_text_size"
+                            android:textStyle="bold" />
+
+                        <AutoCompleteTextView
+                            android:id="@+id/comuneDiNascita"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            android:layout_weight="2"
+                            android:completionThreshold="3"
+                            android:inputType="textAutoComplete"
+                            android:keepScreenOn="false" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout9"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/main_page_lable_margin"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/main_page_lable_margin"
+                            android:layout_weight="5"
+                            android:gravity="center_vertical|right"
+                            android:text="@string/indirizzo_di_fornitura"
+                            android:textColor="@color/optima_lable_color"
+                            android:textSize="@dimen/regular_text_size"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/indirizzoDiFornitura"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:inputType="text"
+                            android:singleLine="false" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/main_page_lable_margin"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/main_page_lable_margin"
+                            android:layout_weight="5"
+                            android:gravity="center_vertical|right"
+                            android:text="@string/comune_di_fornitura"
+                            android:textColor="@color/optima_lable_color"
+                            android:textIsSelectable="false"
+                            android:textSize="@dimen/regular_text_size"
+                            android:textStyle="bold" />
+
+                        <AutoCompleteTextView
+                            android:id="@+id/comuneDiFornitura"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            android:layout_weight="2"
+                            android:completionThreshold="3"
+                            android:inputType="textAutoComplete"
+                            android:keepScreenOn="false" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="7dp"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/main_page_lable_margin">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/main_page_lable_margin"
+                            android:layout_weight="5"
+                            android:gravity="center_vertical|right"
+                            android:text="@string/cap"
+                            android:textColor="@color/optima_lable_color"
+                            android:textIsSelectable="false"
+                            android:textSize="@dimen/regular_text_size"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/cap"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:enabled="true"
+                            android:focusable="true"
+                            android:gravity="bottom"
+                            android:inputType="number"
+                            android:singleLine="false" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout8"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/main_page_lable_margin"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/main_page_lable_margin"
+                            android:layout_weight="5"
+                            android:gravity="center_vertical|right"
+                            android:text="@string/codice_fiscale"
+                            android:textColor="@color/optima_lable_color"
+                            android:textIsSelectable="false"
+                            android:textSize="@dimen/regular_text_size"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/codiceFiscale"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="bottom"
+                                android:inputType="text"
+                                android:maxLength="16"
+                                android:singleLine="false"
+                                android:textColor="@color/red" />
+
+                            <Button
+                                android:id="@+id/generate"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="center|right"
+                                android:layout_weight="5"
+                                android:background="@drawable/full_holo_light"
+                                android:enabled="true"
+                                android:text="@string/generate"
+                                android:textColor="#A9A9A9"
+                                android:textSize="@dimen/regular_text_size" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout10"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/main_page_lable_margin">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/main_page_lable_margin"
+                            android:layout_weight="5"
+                            android:gravity="right"
+                            android:minWidth="100dp"
+                            android:text="@string/tipologia_cliente"
+                            android:textColor="@color/optima_lable_color"
+                            android:textIsSelectable="false"
+                            android:textSize="@dimen/regular_text_size"
+                            android:textStyle="bold" />
+
+                        <RadioGroup
+                            android:id="@+id/tipologiaClienteRadioGroup"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            android:layout_weight="2"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/residenziale"
+                                style="@style/optimaRadioButtonStyle"
+                                android:checked="true"
+                                android:text="@string/residenziale" />
+
+                            <RadioButton
+                                android:id="@+id/nonResidenziale"
+                                style="@style/optimaRadioButtonStyle"
+                                android:text="@string/non_residenziale" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/configura_visualizza_btns"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/main_page_controls_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/action_bar_default_height"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/configuraOfferta"
+                    style="@style/optimaButtonStyle"
+                    android:layout_marginRight="25dp"
+                    android:text="@string/configura_offerta" />
+
+                <Button
+                    android:id="@+id/visualizzaArchivio"
+                    style="@style/optimaButtonStyle"
+                    android:onClick="startArchivioActivity"
+                    android:text="@string/visualizza_archivio" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/calcolaArchivio"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="0.1"
+            android:gravity="center_vertical|right"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="5000"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="5000"
+                    android:id="@+id/linearLayout39" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.5"
+                        android:layout_gravity="center_horizontal|bottom" >
+
+                        <ImageButton
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="40dp"
+                            android:background="@drawable/back_button"
+                            android:layout_gravity="bottom"
+                            android:clickable="true"
+                            android:id="@+id/imageButton"
+                            android:onClick="backAction" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:background="@drawable/main_solid_background"
+                        android:baselineAligned="false"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginBottom="15dp"
+                        android:visibility="visible"
+                        android:id="@+id/linearLayout38" >
+
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="54dp"
+                            android:textStyle="bold"
+                            android:shadowColor="@android:color/darker_gray"
+                            android:textSize="28dp"
+                            android:background="@android:color/white"
+                            android:textColor="@color/holo_red_dark"
+                            android:text="@string/ricalcola"
+                            android:id="@+id/ricalcolaEnabled"
+                            android:visibility="visible" />
+
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="54dp"
+                            android:textStyle="bold"
+                            android:shadowColor="@android:color/darker_gray"
+                            android:textSize="28dp"
+                            android:background="@android:color/white"
+                            android:textColor="@android:color/darker_gray"
+                            android:text="@string/ricalcola"
+                            android:id="@+id/ricalcolaDisabled"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

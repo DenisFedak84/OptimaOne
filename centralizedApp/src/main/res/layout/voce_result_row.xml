@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/testNumber"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/blue_dettaglio_table_cell"
+        android:gravity="center_vertical"
+        android:minWidth="50dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/prezzoVoce"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_dettaglio_table_cell"
+        android:contentDescription="@string/energy_cell"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/prezzoVoceConIVA"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_dettaglio_table_cell"
+        android:contentDescription="@string/gas_cell"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/percVoce"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_dettaglio_table_cell"
+        android:contentDescription="@string/adsl_cell"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+</LinearLayout>

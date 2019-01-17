@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="numsimarray">
+        <item></item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+
+    <string-array name="heads_excel">
+        <item>Data offerta</item>
+        <item>Id Consumer</item>
+        <item>Id fiscale</item>
+        <item>Ragione sociale</item>
+        <item>P.IVA/CF</item>
+        <item>Comune</item>
+        <item>Servizi</item>
+        <item>Canone mese</item>
+        <item>Costo Offerta IVA inclusa</item>
+        <item>Costo di attivazione</item>
+        <item>Offerta 1</item>
+        <item>Costo Offerta 1</item>
+        <item>Offerta 2</item>
+        <item>Costo Offerta 2</item>
+        <item>Offerta 3</item>
+        <item>Costo Offerta 3</item>
+        <item>Servizio</item>
+        <item>Potenza contatore</item>
+        <item>Tensione</item>
+        <item>Taglia Kwh</item>
+        <item>Tipologia Contatore</item>
+        <item>Data Da</item>
+        <item>Data A</item>
+        <item>Kwh1</item>
+        <item>Kwh2</item>
+        <item>Kwh3</item>
+        <item>Costo Offerta</item>
+        <item>Costo Offerta IVA inclusa</item>
+        <item>Servizio</item>
+        <item>Classe di utilizzo</item>
+        <item>Classe di prelievo</item>
+        <item>Taglia Smc</item>
+        <item>Data Da</item>
+        <item>Data A</item>
+        <item>Smc anno</item>
+        <item>Costo Offerta</item>
+        <item>Costo Offerta IVA inclusa</item>
+        <item>Servizio</item>
+        <item>Minuti verso fisso</item>
+        <item>Minuti verso mobile</item>
+        <item>Numero di linee</item>
+        <item>Costo Offerta</item>
+        <item>Costo Offerta IVA inclusa</item>
+        <item>Servizio</item>
+        <item>ADSL</item>
+        <item>Costo Offerta</item>
+        <item>Costo Offerta IVA inclusa</item>
+        <!--<item>Servizio</item>-->
+        <!--<item>Sim number</item>-->
+        <!--<item>Minuti mese desiderati</item>-->
+        <!--<item>SMS mese</item>-->
+        <!--<item>Dati mese</item>-->
+        <!--<item>Costo offerta</item>-->
+    </string-array>
+
+    <string-array name="heads_excel_2">
+        <item>Id offerta</item>
+        <item>Minuti verso fisso</item>
+        <item>Minuti verso mobile</item>
+        <item>Tipologia cliente</item>
+        <item>Tipologia linea</item>
+        <item>Linea descrizione</item>
+        <item>Numero linee</item>
+        <item>Numero aggiuntivi</item>
+        <item>Linea cost</item>
+        <item>Linea costIVA</item>
+    </string-array>
+</resources>

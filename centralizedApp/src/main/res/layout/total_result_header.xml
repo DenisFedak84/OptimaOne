@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:id="@+id/linearLayout">
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/energy"
+        android:contentDescription="@string/energy_cell"
+        android:background="@drawable/blue_dettaglio_table_cell"
+        android:textColor="@color/white"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:text="Canone mensile" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Canone mensile con IVA"
+        android:id="@+id/gas"
+        android:contentDescription="@string/gas_cell"
+        android:background="@drawable/blue_dettaglio_table_cell"
+        android:textColor="@color/white"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:background="@drawable/blue_dettaglio_table_cell"
+        android:textColor="@color/white"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:text="Conto relax" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:background="@drawable/blue_dettaglio_table_cell"
+        android:textColor="@color/white"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:text="Rata costo attivazione" />
+
+</LinearLayout>

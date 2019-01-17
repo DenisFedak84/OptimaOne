@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:color/background_light">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_gradient_background"
+            android:minHeight="50dp"
+            android:id="@+id/linearLayout">
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/sfd_title"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:id="@+id/sfd_top_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:background="@color/white">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1.0">
+
+            <TextView
+                    android:id="@+id/sfd_current_path"
+                    android:layout_width="1dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.78"
+                    android:textColor="@color/holo_red_dark"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:paddingLeft="2dip"
+                    android:layout_gravity="center_vertical"/>
+
+            <Button
+                    android:id="@+id/sfd_go_up"
+                    android:layout_width="1dip"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.22"
+                    android:layout_gravity="center_vertical"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/sfd_go_up_text"
+                    android:background="@drawable/full_holo_light"
+                    android:textColor="@color/holo_red_dark"
+                    android:textStyle="bold"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/sfd_bottom_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:weightSum="1.0"
+            android:background="@color/white">
+
+        <EditText
+                android:id="@+id/sfd_file_name"
+                android:layout_width="1dip"
+                android:layout_height="50dp"
+                android:layout_weight="0.4"
+                android:background="@drawable/full_holo_light"/>
+
+        <Button
+                android:id="@+id/sfd_new_dir"
+                android:layout_width="1dip"
+                android:layout_height="50dp"
+                android:layout_weight="0.3"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/sfd_new_dir_text"
+                android:background="@drawable/full_holo_light"
+                android:textColor="@color/holo_red_dark"
+                android:textStyle="bold"/>
+
+        <Button
+                android:id="@+id/sfd_save"
+                android:layout_width="1dip"
+                android:layout_height="50dp"
+                android:layout_weight="0.3"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/ok"
+                android:background="@drawable/dialog_full_holo_red"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <ListView
+            android:id="@+id/sfd_list"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_below="@id/sfd_top_bar"
+            android:layout_above="@id/sfd_bottom_bar"
+            />
+
+</RelativeLayout>

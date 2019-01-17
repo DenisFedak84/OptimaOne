@@ -1,0 +1,441 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_solid_background"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:paddingTop="30dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/main_solid_background"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.3"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/logo_large"
+                android:src="@drawable/logo_large" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="5dp"
+            android:layout_height="fill_parent"
+            android:background="#e6e6e6"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#cf031e"
+                android:onClick="closeAll"
+                android:shadowColor="@android:color/darker_gray"
+                android:text="Esci"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="120dp"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/includiDevicesCheckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="30dp"
+                    android:checked="false"
+                    android:textColor="#4d4d4d"
+                    android:textSize="12dp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/includi_devices"
+                    android:textColor="#4d4d4d"
+                    android:textIsSelectable="false"
+                    android:textSize="28dp"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/devicesLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="18dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="40dp"
+                        android:text="@string/device"
+                        android:textColor="#4d4d4d"
+                        android:textIsSelectable="true"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="110dp"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/devicesSpinner"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="5" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="10"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/deviceDetailButton"
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:src="@drawable/device_detail" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout38"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="10"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/modificaDeviceLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/modificaDeviceButton"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|bottom"
+                            android:background="@drawable/full_holo_light"
+                            android:text="@string/modifica_device"
+                            android:textColor="@color/holo_red_dark"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:id="@+id/annullaDeviceButton"
+                            android:layout_width="150dp"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/full_holo_light"
+                            android:text="@string/annulla"
+                            android:textColor="@color/holo_red_dark"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/addDeviceLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="right"
+                            android:text="@string/agguingi_device"
+                            android:textColor="#4d4d4d"
+                            android:textIsSelectable="true"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <ImageButton
+                            android:id="@+id/addDeviceEnabled"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal|bottom|right"
+                            android:background="@drawable/plus_enabled"
+                            android:clickable="true"
+                            android:visibility="gone" />
+
+                        <ImageButton
+                            android:id="@+id/addDeviceDisabled"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal|bottom|right"
+                            android:background="@drawable/plus"
+                            android:clickable="true"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/deviceTable"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout40"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal|top"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|center_vertical|center_horizontal"
+                            android:text="@string/device_name"
+                            android:textColor="#4d4d4d"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/textView33"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="@string/tipo_device"
+                            android:textColor="#4d4d4d"
+                            android:textSize="13dp" />
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout39"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.3"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:longClickable="false"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="5"
+                                android:background="@drawable/eliminia_button"
+                                android:visibility="invisible" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout42"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/grey_line" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="-120dp"
+        android:layout_weight="0.2"
+        android:baselineAligned="false"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5000"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/tornaIndietro4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/back_button"
+                    android:clickable="true"
+                    android:onClick="backAction" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/deviceCalcolaLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/main_solid_background"
+                    android:baselineAligned="false"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/calcolaDevice"
+                        android:layout_width="150dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/calcola"
+                        android:onClick="calcola"
+                        android:shadowColor="@android:color/darker_gray"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/calcolaDeviceDisabled"
+                        android:layout_width="150dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/calcola_disabled"
+                        android:shadowColor="@android:color/darker_gray"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/deviceRicalcolaLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/main_solid_background"
+                    android:baselineAligned="false"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/ricalcolaDeviceDisabled"
+                        android:layout_width="150dp"
+                        android:layout_height="54dp"
+                        android:background="@android:color/white"
+                        android:shadowColor="@android:color/darker_gray"
+                        android:text="ricalcola"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="28dp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/ricalcolaDevice"
+                        android:layout_width="150dp"
+                        android:layout_height="54dp"
+                        android:background="@android:color/white"
+                        android:shadowColor="@android:color/darker_gray"
+                        android:text="ricalcola"
+                        android:textColor="@color/holo_red_dark"
+                        android:textSize="28dp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/blue_gradient_background" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
